@@ -1,4 +1,6 @@
-/* add 4 color variables, dark theme */
+/* import w.jpg */
+
+
 :root {
     --white: #c5bfcd;
     --black: #151515;
@@ -20,8 +22,8 @@ body {
 
 main {
     display: grid;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: .25rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 h1 {
@@ -37,7 +39,6 @@ h2 {
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
-    /* border: 2px solid var(--grey); */
     background-color: var(--nearBlack);
     min-width: 300px;
     max-width: 500px;
@@ -69,7 +70,7 @@ ul {
 }
 
 li {
-    padding: 4px 0px;
+    padding: 2px 0px;
 }
 
 .flex {
