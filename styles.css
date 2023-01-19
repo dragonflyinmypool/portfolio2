@@ -1,0 +1,73 @@
+/* add 4 color variables, dark theme */
+:root {
+    --white: #c5bfcd;
+    --black: #151515;
+    --nearBlack: #1d1d1d;
+    --grey: #333;
+    --random: orange;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: white;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    /* border: 2px solid var(--grey); */
+    background-color: var(--nearBlack);
+    flex: 1 1 0px;
+    min-width: 300px;
+}
+
+main>.card {
+    border: 2px solid rgb(172, 44, 44);
+}
+
+p {
+    margin: 10px 0px;
+}
+
+/* links */
+a {
+    color: var(--random);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 15px 0px;
+}
+
+li {
+    padding: 4px 0px;
+}
+
+.flex {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
