@@ -52,11 +52,11 @@ h2 {
 }
 
 .dev {
-    border: 2px solid rgb(172, 44, 44);
+    border: 2px solid rgb(197, 25, 183);
 }
 
 .prod {
-    border: 2px solid rgb(44, 172, 80);
+    border: 2px solid rgb(197, 25, 183);
 }
 
 p {
