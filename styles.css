@@ -4,7 +4,6 @@
     --black: #151515;
     --nearBlack: #1d1d1d;
     --grey: #333;
-    --random: orange;
 }
 
 * {
@@ -20,8 +19,9 @@ body {
 }
 
 main {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 h1 {
@@ -39,12 +39,18 @@ h2 {
     margin: 10px;
     /* border: 2px solid var(--grey); */
     background-color: var(--nearBlack);
-    flex: 1 1 0px;
     min-width: 300px;
+    max-width: 500px;
+    height: 300px;
+    flex: 1 1 0px;
 }
 
-main>.card {
+.dev {
     border: 2px solid rgb(172, 44, 44);
+}
+
+.prod {
+    border: 2px solid rgb(44, 172, 80);
 }
 
 p {
@@ -53,7 +59,7 @@ p {
 
 /* links */
 a {
-    color: var(--random);
+    color: var(--white);
     text-decoration: none;
 }
 
