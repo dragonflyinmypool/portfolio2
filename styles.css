@@ -39,8 +39,8 @@ main {
 }
 
 h1 {
-    font-size: 3.8em;
-    margin-bottom: 1rem;
+    font-size: 4.5em;
+    margin-bottom: 2.0rem;
 }
 
 h2 {
@@ -59,8 +59,8 @@ h2 {
 }
 
 
-.dev {
-    border: 2px solid rgb(172, 44, 44);
+.desc {
+    border: 5px solid rgb(255, 255, 255);
 }
 
 .prod {
