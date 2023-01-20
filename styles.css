@@ -39,7 +39,7 @@ main {
 }
 
 h1 {
-    font-size: 4.5em;
+    font-size: 4.0em;
     margin-bottom: 1.5rem;
 }
 
@@ -53,7 +53,7 @@ h2 {
     padding: 25px;
     border-radius: 30px;
     background-color: var(--nearBlack);
-    height: 485px;
+    height: 465px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
