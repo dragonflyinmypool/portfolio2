@@ -40,12 +40,13 @@ main {
 
 h1 {
     font-size: 4.5em;
-    margin-bottom: 2.0rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
     color: rgb(130, 41, 155);
     font-family: myFirstFont;
+    font-size: 1.7em;
 }
 
 .card {
