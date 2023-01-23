@@ -68,6 +68,15 @@ h2 {
     border: 3px solid rgb(85, 32, 100);
 }
 
+
+.courses {
+    border: 3px solid rgb(32, 100, 50);
+}
+
+.courses h2 {
+    color: rgb(32, 100, 50);
+}
+
 p {
     margin: 10px 0px;
 }
