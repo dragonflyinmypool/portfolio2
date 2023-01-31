@@ -10,6 +10,7 @@
     --black: #151515;
     --nearBlack: #1d1d1d;
     --grey: #333;
+    --purple: rgb(130, 41, 155);
 }
 
 * {
@@ -44,7 +45,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(130, 41, 155);
+    color: var(--purple);
     font-family: myFirstFont;
     font-size: 1.7em;
 }
@@ -65,7 +66,7 @@ h2 {
 }
 
 .prod {
-    border: 3px solid rgb(85, 32, 100);
+    border: 3px solid var(--purple);
 }
 
 
@@ -100,4 +101,31 @@ li {
     display: flex;
     justify-content: start;
     gap: 15px;
+}
+
+.status {
+    margin: 10px 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--white);
+    border: 1px solid var(--purple);
+}
+
+.buttons {
+    margin: 10px 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: var(--purple);
+    color: var(--white);
+    border: 1px solid var(--purple);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
