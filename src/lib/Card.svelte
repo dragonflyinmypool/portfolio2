@@ -23,12 +23,12 @@
 <style>
 	.card {
 		padding: 0.25rem 0.75rem;
-		max-width: 500px;
-		border: #00b179 2px solid;
+		/* border: #00b179 2px solid; */
 		border-radius: 10px;
 		height: 250px;
 		display: grid;
 		grid-template-rows: 40px 30px 85px 30px 40px;
+		background-color: rgb(226, 226, 226);
 	}
 	.status {
 		line-height: 30px;

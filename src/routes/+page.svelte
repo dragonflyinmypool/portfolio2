@@ -3,35 +3,16 @@
 	const projectData = people.ProductionCards;
 
 	import Card from '$lib/Card.svelte';
-	import EmptyCard from '$lib/EmptyCard.svelte';
+	import IntroCard from '$lib/IntroCard.svelte';
+	import CourseCard from '$lib/CourseCard.svelte';
 </script>
 
 <main>
-	<EmptyCard>
-		<h1>Jamie Joseph Heiney</h1>
-		1990 London
-		<ul style="margin-top: 20px;">
-			<li>HTML, CSS, Javascript, Svelte, Node</li>
-			<li>Accounting fundementals</li>
-			<li>Principals of design</li>
-		</ul>
-	</EmptyCard>
+	<IntroCard />
 	{#each projectData as data}
 		<Card {data} />
 	{/each}
-	<EmptyCard>
-		<h2>Courses</h2>
-		<ul style="list-style:disc">
-			<li>Intermediate JavaScript</li>
-			<li>Understanding the Weird Parts</li>
-			<li>JavaScript Algorithms and Data Structures</li>
-			<li>Svelte.js, The Complete Guide by Max Schwarzmüller, Udemy</li>
-			<li>
-				NodeJS, The Complete Guide (MVC, REST APIs, GraphQL, Denode) by Max Schwarzmüller, Udemy
-			</li>
-			<li>The Complete Google Sheets Course: Beginner to Advanced!</li>
-		</ul>
-	</EmptyCard>
+	<CourseCard />
 </main>
 
 <style>
