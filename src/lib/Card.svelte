@@ -15,7 +15,7 @@
 	</div>
 	<div class="flex-Text">
 		{#each data.links as link}
-			<div class="link"><a href={link[1]}>{link[0]}</a></div>
+			<a href={link[1]} class="link">{link[0]}</a>
 		{/each}
 	</div>
 </div>
@@ -27,8 +27,13 @@
 		border-radius: 10px;
 		height: 250px;
 		display: grid;
-		grid-template-rows: 40px 30px 85px 30px 40px;
+		grid-template-rows: 40px 30px 105px 25px 35px;
 		background-color: rgb(226, 226, 226);
+	}
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 1000;
+		font-family: myFirstFont;
 	}
 	.status {
 		line-height: 30px;
@@ -42,9 +47,13 @@
 	}
 
 	.link {
-		border-radius: 0.7rem;
-		padding: 0.3rem 0.5rem;
-		background-color: #00b179;
+		border-radius: 0.4rem;
+		background-color: #457c8d;
+		line-height: 22px;
+		height: 22px;
+		padding: 0 0.3rem;
+		font-size: small;
+		vertical-align: middle;
 	}
 
 	.tech {

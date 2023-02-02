@@ -4,11 +4,14 @@
 
 	import Card from '$lib/Card.svelte';
 	import IntroCard from '$lib/IntroCard.svelte';
+	import IntroCard2 from '$lib/IntroCard2.svelte';
+
 	import CourseCard from '$lib/CourseCard.svelte';
 </script>
 
 <main>
 	<IntroCard />
+	<IntroCard2 />
 	{#each projectData as data}
 		<Card {data} />
 	{/each}

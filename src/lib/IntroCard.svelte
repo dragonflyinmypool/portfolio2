@@ -1,11 +1,5 @@
 <div class="card">
 	<h1>Jamie Joseph Heiney</h1>
-	1990 London
-	<ul style="margin-top: 20px;">
-		<li>HTML, CSS, Javascript, Svelte, Node</li>
-		<li>Accounting fundementals</li>
-		<li>Principals of design</li>
-	</ul>
 </div>
 
 <style>
@@ -15,8 +9,9 @@
 		border-radius: 10px;
 		font-size: small;
 		background-color: rgb(226, 226, 226);
+		font-size: 12px;
 	}
-	ul {
-		list-style: none;
+	h1 {
+		font-size: 3.75rem;
 	}
 </style>

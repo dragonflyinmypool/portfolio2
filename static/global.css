@@ -1,3 +1,9 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./fonts/NevisBold-KGwl.ttf);
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,6 +13,7 @@
 body {
     padding: 20px;
     background-color: rgb(239, 237, 237);
+    font-size: 15px;
 }
 
 h3 {
