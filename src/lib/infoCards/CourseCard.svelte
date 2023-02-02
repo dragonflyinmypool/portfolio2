@@ -1,4 +1,9 @@
-<div class="card">
+<script>
+	// import genericCard.svelte
+	import GenericCard from '../GenericCard.svelte';
+</script>
+
+<GenericCard>
 	<h2>Courses</h2>
 	<ul style="list-style:disc">
 		<li>Intermediate JavaScript</li>
@@ -10,16 +15,9 @@
 		</li>
 		<li>The Complete Google Sheets Course: Beginner to Advanced!</li>
 	</ul>
-</div>
+</GenericCard>
 
 <style>
-	.card {
-		padding: 0.5rem 0.75rem;
-		/* border: #00b179 2px solid; */
-		border-radius: 10px;
-		font-size: small;
-		background-color: rgb(226, 226, 226);
-	}
 	ul {
 		padding: 15px;
 	}

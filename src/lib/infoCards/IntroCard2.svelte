@@ -1,4 +1,9 @@
-<div class="card">
+<script>
+	// import genericCard.svelte
+	import GenericCard from '../GenericCard.svelte';
+</script>
+
+<GenericCard>
 	<ul>
 		<li>London 1990</li>
 	</ul>
@@ -11,17 +16,9 @@
 		<li>🥇FAU Architecture Design Competition</li>
 		<li>🥈MIT Miami Healthcare Hackathon</li>
 	</ul>
-</div>
+</GenericCard>
 
 <style>
-	.card {
-		padding: 0.75rem 0.75rem;
-		/* border: #00b179 2px solid; */
-		border-radius: 10px;
-		font-size: small;
-		background-color: rgb(226, 226, 226);
-		font-size: 12px;
-	}
 	ul {
 		margin-top: 20px;
 		list-style: none;

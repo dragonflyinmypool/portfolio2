@@ -28,7 +28,7 @@
 		},
 		{
 			"title": "Twitter History Bot",
-			"status": ["V1"],
+			"status": ["V1", "Issues"],
 			"description": "A bot that posts interesting history facts and images each day.",
 			"techologies": ["Node.js", "Twitter API", "GPT-3", "Bing API", "Railway.app"],
 			"links": [

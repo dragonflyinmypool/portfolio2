@@ -1,17 +1,14 @@
 <script>
-	import people from '$lib/data/cardData.json';
-	const projectData = people.ProductionCards;
-
 	import Card from '$lib/Card.svelte';
-	import IntroCard from '$lib/IntroCard.svelte';
-	import IntroCard2 from '$lib/IntroCard2.svelte';
+	import IntroCard from '$lib/infoCards/IntroCard.svelte';
+	import CourseCard from '$lib/infoCards/CourseCard.svelte';
 
-	import CourseCard from '$lib/CourseCard.svelte';
+	import pd from '$lib/data/cardData.json';
+	const projectData = pd.ProductionCards;
 </script>
 
 <main>
 	<IntroCard />
-	<!-- <IntroCard2 /> -->
 	{#each projectData as data}
 		<Card {data} />
 	{/each}
