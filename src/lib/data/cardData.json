@@ -11,21 +11,24 @@
 	"ProductionCards": [
 		{
 			"title": "Tweet 2 Poem",
-			"status": "Development",
+			"status": ["V0.1 ", "Dev"],
 			"description": "A web app that takes a tweet and turns it into a poem",
 			"techologies": ["Node.js", "Twitter API", "GPT-3", "Railway.app"],
 			"links": [["Repo", "https://github.com/dragonflyinmypool/Tweet2Poem"]]
 		},
 		{
 			"title": "Chit Chat",
-			"status": "Development",
+			"status": ["V1"],
 			"description": "Genereate a conversation starter with this app, based on location, tone, age and other attributes.",
 			"techologies": ["Node.js", "GPT-3", "Railway.app", "Netlify"],
-			"links": [["Repo", "https://github.com/dragonflyinmypool/Chit-chat-GPT"]]
+			"links": [
+				["Check it out", "https://chit-chat-convo.netlify.app/"],
+				["Repo", "https://github.com/dragonflyinmypool/Chit-chat-GPT"]
+			]
 		},
 		{
 			"title": "Twitter History Bot",
-			"status": "Beta",
+			"status": ["V1"],
 			"description": "A bot that posts interesting history facts and images each day.",
 			"techologies": ["Node.js", "Twitter API", "GPT-3", "Bing API", "Railway.app"],
 			"links": [
@@ -35,9 +38,9 @@
 		},
 		{
 			"title": "Simple Bingo Caller",
-			"status": "V2.0",
+			"status": ["V2"],
 			"description": "This app helps elderly play bingo in care facilities. It displays the ball in large and calls the number in multiple languages",
-			"techologies": ["Svelte", "3.4 ★", "450+ Reviews"],
+			"techologies": ["3.4 ★", "450+ Reviews", "Svelte"],
 			"links": [
 				[
 					"Check it out",
@@ -48,9 +51,9 @@
 		},
 		{
 			"title": "Simple Hangman",
-			"status": "V2.0",
+			"status": ["V2"],
 			"description": "An educational word game that is easy to use and fun to play.",
-			"techologies": ["Svelte", "3.7★", "300+ Reviews"],
+			"techologies": ["3.7★", "300+ Reviews", "Svelte"],
 			"links": [
 				[
 					"Check it out",
@@ -61,14 +64,14 @@
 		},
 		{
 			"title": "Loan tracking system",
-			"status": "V4.0",
+			"status": ["V4"],
 			"description": "This system helped the lender track loans, syndicator investments, sales commission and many other loan variables. Particular attention was payed to ease of use, compatibilty with accounting software & security.",
 			"techologies": [],
 			"links": []
 		},
 		{
 			"title": "Games 4 Life",
-			"status": "V2.0",
+			"status": ["V2"],
 			"description": "Games for elders that are designed so that they can understand and participate.Reached 100s of seniors with over 30 nursing home customers.",
 			"techologies": [],
 			"links": []

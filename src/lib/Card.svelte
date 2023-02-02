@@ -6,7 +6,14 @@
 	<h3>
 		{data.title}
 	</h3>
-	<div class="status">{data.status}</div>
+	<!-- if data.status == dev, change add class badge -->
+
+	<div class="status">
+		{#each data.status as status}
+			<span class={status === 'Dev' ? 'badge' : ''}>{status}</span>
+		{/each}
+	</div>
+
 	<p>{data.description}</p>
 	<div class="flex-Text small-text">
 		{#each data.techologies as tech}
@@ -22,12 +29,12 @@
 
 <style>
 	.card {
-		padding: 0.25rem 0.75rem;
+		padding: 0.55rem 0.75rem;
 		/* border: #00b179 2px solid; */
 		border-radius: 10px;
 		height: 250px;
 		display: grid;
-		grid-template-rows: 40px 30px 105px 25px 35px;
+		grid-template-rows: 40px 30px 100px 30px 35px;
 		background-color: rgb(226, 226, 226);
 	}
 	h3 {
@@ -37,6 +44,13 @@
 	}
 	.status {
 		line-height: 30px;
+	}
+	.badge {
+		border: 1px solid green;
+		padding: 2px 7px;
+		border-radius: 5px;
+		color: green;
+		margin-left: 10px;
 	}
 	.flex-Text {
 		display: flex;
@@ -48,7 +62,7 @@
 
 	.link {
 		border-radius: 0.4rem;
-		background-color: #457c8d;
+		background-color: #8d4582;
 		line-height: 22px;
 		height: 22px;
 		padding: 0 0.3rem;

@@ -11,7 +11,7 @@
 
 <main>
 	<IntroCard />
-	<IntroCard2 />
+	<!-- <IntroCard2 /> -->
 	{#each projectData as data}
 		<Card {data} />
 	{/each}
