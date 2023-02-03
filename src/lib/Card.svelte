@@ -1,7 +1,7 @@
 <script>
 	export let data;
 	import GenericCard from './GenericCard.svelte';
-	import StatusBar from './infoCards/StatusBar.svelte';
+	import StatusBar from './StatusBar.svelte';
 </script>
 
 <GenericCard>
@@ -20,6 +20,7 @@
 			{#each data.links as link}
 				<a href={link[1]} class="link">{link[0]}</a>
 			{/each}
+			<a href={`/detail/${data.name}`} class="link">+</a>
 		</div>
 	</div>
 </GenericCard>
