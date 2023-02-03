@@ -24,7 +24,7 @@
 <style>
 	.layout {
 		display: grid;
-		grid-template-rows: 40px 30px 100px 30px 25px;
+		grid-template-rows: 40px 30px 90px 30px 15px;
 		font-size: 0.9rem;
 	}
 	h3 {

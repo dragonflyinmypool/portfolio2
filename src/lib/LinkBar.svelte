@@ -5,9 +5,9 @@
 
 <div class="flex-Text">
 	{#if status === 'small'}
-		<a href={`/detail/${data.name}`} class="link">➕</a>
+		<a href={`/detail/${data.name}`} class="link" style="font-size: 20px; line-height: 5px;">+</a>
 	{:else}
-		<a href={`../`} class="link">➖</a>
+		<a href={`../`} class="link">-</a>
 	{/if}
 
 	{#each data.links as link}
@@ -26,7 +26,7 @@
 		height: 32px;
 	}
 	.link {
-		background-color: #cb8254;
+		background-color: #e6efea;
 		padding: 0.6rem 0.5rem;
 		line-height: 1px;
 	}

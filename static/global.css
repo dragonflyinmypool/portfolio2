@@ -6,12 +6,12 @@
 /* add color vaiables*/
 
 :root {
-    --page-background: #1b1b1a;
-    --card-background: #ece4df;
+    --page-background: #cecbcc;
+    --card-background: #c1c8c2;
     --title-color: #1f1812;
-    --button-color: #cb8254;
-    --green-badge: #cb8254;
-    --red-badge: #cb8254;
+    --button-color: #e6efea;
+    --green-badge: #e6efea;
+    --red-badge: #e6efea;
 }
 
 * {
