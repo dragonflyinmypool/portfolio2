@@ -10,7 +10,7 @@
 		<a href={`../`} class="link">-</a>
 	{/if}
 
-	{#each data.links as link}
+	{#each Object.entries(data.links) as link}
 		<a href={link[1]} class="link">{link[0]}</a>
 	{/each}
 </div>

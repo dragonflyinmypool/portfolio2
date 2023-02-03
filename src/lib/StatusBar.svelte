@@ -3,9 +3,12 @@
 </script>
 
 <div class="status">
-	{#each statusData as status}
-		<span class={status}>{status}</span>
-	{/each}
+	{#if statusData.status}
+		<span class="Dev">{statusData.status}</span>
+	{/if}
+	{#if statusData.version}
+		<span class="Dev">V{statusData.version}</span>
+	{/if}
 </div>
 
 <style>
@@ -13,19 +16,10 @@
 		line-height: 30px;
 	}
 	.Dev {
-		border: 1px solid var(--green-badge);
+		border: 1px solid var(--button-color);
 		padding: 2px 7px;
 		border-radius: 5px;
-		color: var(--green-badge);
-		margin-left: 10px;
-		font-weight: bold;
-	}
-	.Issues {
-		border: 1px solid var(--red-badge);
-		padding: 2px 7px;
-		border-radius: 5px;
-		color: var(--red-badge);
-		margin-left: 10px;
+		color: var(--button-color);
 		font-weight: bold;
 	}
 </style>

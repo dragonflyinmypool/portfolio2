@@ -10,13 +10,14 @@
 		<h3>
 			{data.title}
 		</h3>
-		<StatusBar statusData={data.status} />
+
 		<p>{data.description}</p>
 		<div class="flex-Text small-text">
 			{#each data.techologies as tech}
 				<div class="tech">{tech}</div>
 			{/each}
 		</div>
+		<StatusBar statusData={data.status} />
 		<LinkBar {data} status="small" />
 	</div>
 </GenericCard>
@@ -24,7 +25,7 @@
 <style>
 	.layout {
 		display: grid;
-		grid-template-rows: 40px 30px 90px 30px 15px;
+		grid-template-rows: 45px 90px 20px 25px 35px;
 		font-size: 0.9rem;
 	}
 	h3 {
