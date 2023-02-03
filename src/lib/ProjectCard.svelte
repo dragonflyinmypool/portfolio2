@@ -1,9 +1,9 @@
 <script>
 	export let data;
+
 	import GenericCard from './GenericCard.svelte';
-	import StatusBar from './StatusBar.svelte';
-	import LinkBar from './LinkBar.svelte';
-	import CardTitle from './CardTitle.svelte';
+	import LinkBar from './subComponents/LinkBar.svelte';
+	import CardTitle from './subComponents/CardTitle.svelte';
 </script>
 
 <GenericCard>
@@ -27,12 +27,6 @@
 		grid-template-rows: 45px 120px 25px 35px;
 		font-size: 0.9rem;
 	}
-	h3 {
-		font-size: 1.5rem;
-		font-weight: 1000;
-		font-family: myFirstFont;
-	}
-
 	.flex-Text {
 		display: flex;
 		flex-direction: row;

@@ -1,14 +1,11 @@
 <script>
+	import StatusBar from '../../../lib/subComponents/StatusBar.svelte';
+	import LinkBar from '../../../lib/subComponents/LinkBar.svelte';
+
 	export let data;
-
-	import pd from '$lib/data/cardData.json';
-	const projectData = pd.ProductionCards;
-
-	let cardData = projectData.filter((projectData) => projectData.name === data.slug);
+	import { cards } from '$lib/data/cardData.json';
+	let cardData = cards.filter((cards) => cards.name === data.slug);
 	let cardInfo = cardData[0];
-
-	import StatusBar from '../../../lib/StatusBar.svelte';
-	import LinkBar from '../../../lib/LinkBar.svelte';
 </script>
 
 <div class="layout">

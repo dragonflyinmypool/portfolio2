@@ -15,10 +15,39 @@
 		</li>
 		<li>The Complete Google Sheets Course: Beginner to Advanced!</li>
 	</ul>
+	<div class="flex-Text">
+		<a href={`./courses`} class="link">+</a>
+	</div>
 </GenericCard>
 
 <style>
 	ul {
 		padding: 15px;
+	}
+	.flex-Text {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 0.8rem;
+		padding-top: 0.5rem;
+		font-size: small;
+		height: 32px;
+	}
+	.link {
+		background-color: #e6efea;
+		padding: 0.6rem 0.5rem;
+		line-height: 4px;
+	}
+
+	a {
+		color: var(--title-color);
+		font-family: myFirstFont;
+		text-decoration: none;
+		font-weight: bold;
+		border-radius: 10px;
+		line-height: 12px;
+	}
+	a:hover {
+		color: purple;
 	}
 </style>

@@ -1,14 +1,5 @@
 {
-	"infoCard": {
-		"title": "Jamie Joseph Heiney",
-		"subtitle": "1990 London",
-		"description": [
-			"HTML, CSS, Javascript, Svelte, Node",
-			"Accounting fundementals",
-			"Principals of design"
-		]
-	},
-	"ProductionCards": [
+	"cards": [
 		{
 			"title": "Tweet 2 Poem",
 			"name": "Tweet2Poem",
@@ -51,7 +42,7 @@
 			"title": "Simple Bingo Caller",
 			"name": "SimpleBingoCaller",
 			"status": {
-				"Status": "Live"
+				"status": "Live"
 			},
 			"description": "This app helps elderly play bingo in care facilities. It displays the ball in large and calls the number in multiple languages",
 			"techologies": ["V2", "3.4 ★", "450+ Reviews", "Svelte"],
