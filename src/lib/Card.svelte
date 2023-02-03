@@ -45,11 +45,6 @@
 		line-height: 1rem;
 	}
 
-	a {
-		color: white;
-		text-decoration: none;
-	}
-
 	.small-text {
 		font-size: 0.7rem;
 	}

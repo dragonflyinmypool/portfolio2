@@ -18,6 +18,7 @@
 		border-radius: 5px;
 		color: var(--green-badge);
 		margin-left: 10px;
+		font-weight: bold;
 	}
 	.Issues {
 		border: 1px solid var(--red-badge);
@@ -25,5 +26,6 @@
 		border-radius: 5px;
 		color: var(--red-badge);
 		margin-left: 10px;
+		font-weight: bold;
 	}
 </style>

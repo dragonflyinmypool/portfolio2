@@ -28,7 +28,7 @@
 	.link {
 		background-color: #e6efea;
 		padding: 0.6rem 0.5rem;
-		line-height: 1px;
+		line-height: 4px;
 	}
 
 	a {
