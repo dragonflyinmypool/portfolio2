@@ -13,11 +13,10 @@
 			"title": "Tweet 2 Poem",
 			"name": "Tweet2Poem",
 			"status": {
-				"version": ".01",
 				"status": "Dev"
 			},
 			"description": "A web app that takes a tweet and turns it into a poem",
-			"techologies": ["Node.js", "Twitter API", "GPT-3", "Railway.app"],
+			"techologies": ["V0.1", "Node.js", "Twitter API", "GPT-3", "Railway.app"],
 			"links": {
 				"code": "https://github.com/dragonflyinmypool/Tweet2Poem"
 			}
@@ -26,11 +25,10 @@
 			"title": "Chit Chat",
 			"name": "ChitChat",
 			"status": {
-				"version": "1",
 				"status": "Live"
 			},
 			"description": "Genereate a conversation starter with this app, based on location, tone, age and other attributes.",
-			"techologies": ["Node.js", "GPT-3", "Railway.app", "Netlify"],
+			"techologies": ["V1", "Node.js", "GPT-3", "Railway.app", "Netlify"],
 			"links": {
 				"App": "https://chit-chat-convo.netlify.app/",
 				"Code": "https://github.com/dragonflyinmypool/Chit-chat-GPT"
@@ -40,11 +38,10 @@
 			"title": "Twitter History Bot",
 			"name": "TwitterHistoryBot",
 			"status": {
-				"version": "1",
 				"status": "Issues"
 			},
 			"description": "A bot that posts interesting history facts and images each day.",
-			"techologies": ["Node.js", "Twitter API", "GPT-3", "Bing API", "Railway.app"],
+			"techologies": ["V1", "Node.js", "Twitter API", "GPT-3", "Bing API", "Railway.app"],
 			"links": {
 				"App": "https://twitter.com/imnotfromhere99",
 				"Code": "https://github.com/dragonflyinmypool/TwitterHistoryBot-GPT"
@@ -54,11 +51,10 @@
 			"title": "Simple Bingo Caller",
 			"name": "SimpleBingoCaller",
 			"status": {
-				"version": "2",
 				"Status": "Live"
 			},
 			"description": "This app helps elderly play bingo in care facilities. It displays the ball in large and calls the number in multiple languages",
-			"techologies": ["3.4 ★", "450+ Reviews", "Svelte"],
+			"techologies": ["V2", "3.4 ★", "450+ Reviews", "Svelte"],
 			"links": {
 				"App": "https://www.amazon.com/Simple-Bingo-Caller-group-activities/dp/B07SDPZC8R/ref=sr_1_3?crid=3FT1S187GI5C6&keywords=simple+bingo+caller&qid=1674243750&s=mobile-apps&sprefix=simple+bingo+calle%2Cmobile-apps%2C137&sr=1-3",
 				"Code": "https://github.com/dragonflyinmypool/svelteBingo"
@@ -68,11 +64,10 @@
 			"title": "Simple Hangman",
 			"name": "SimpleHangman",
 			"status": {
-				"version": "2",
 				"status": "Live"
 			},
 			"description": "An educational word game that is easy to use and fun to play.",
-			"techologies": ["3.7★", "300+ Reviews", "Svelte"],
+			"techologies": ["V2", "3.7★", "300+ Reviews", "Svelte"],
 			"links": {
 				"App": "https://www.amazon.com/RedHeron-Simple-Hangman/dp/B07T6C8V6C/ref=sr_1_2?crid=ZM0G75SHKNEK&keywords=simple+hangman&qid=1674149335&sprefix=simple+hangman%2Caps%2C147&sr=8-2",
 				"Code": "https://github.com/dragonflyinmypool/HangmanV2"
@@ -81,21 +76,17 @@
 		{
 			"title": "Loan tracking system",
 			"name": "LoanTrackingSystem",
-			"status": {
-				"version": "4"
-			},
+			"status": {},
 			"description": "This system helped the lender track loans, syndicator investments, sales commission and many other loan variables. Particular attention was payed to ease of use, compatibilty with accounting software & security.",
-			"techologies": [],
+			"techologies": ["V4"],
 			"links": {}
 		},
 		{
 			"title": "Games 4 Life",
 			"name": "Games4Life",
-			"status": {
-				"version": "2"
-			},
+			"status": {},
 			"description": "Games for elders that are designed so that they can understand and participate.Reached 100s of seniors with over 30 nursing home customers.",
-			"techologies": [],
+			"techologies": ["V2"],
 			"links": {}
 		}
 	]

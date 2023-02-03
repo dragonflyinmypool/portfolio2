@@ -3,23 +3,21 @@
 </script>
 
 <div class="status">
-	{#if statusData.status}
-		<span class="Dev">{statusData.status}</span>
+	{#if 'status' in statusData}
+		<span>{statusData.status}</span>
 	{/if}
-	{#if statusData.version}
-		<span class="Dev">V{statusData.version}</span>
+	{#if 'version' in statusData}
+		<span>V{statusData.version}</span>
 	{/if}
 </div>
 
 <style>
-	.status {
-		line-height: 30px;
-	}
-	.Dev {
-		border: 1px solid var(--button-color);
-		padding: 2px 7px;
-		border-radius: 5px;
-		color: var(--button-color);
-		font-weight: bold;
+	span {
+		font-size: 0.7rem;
+		padding-right: 0.5rem;
+		border: 2px solid #e6efea;
+		border-radius: 0.5rem;
+		color: #f0fff6;
+		padding: 2px 10px;
 	}
 </style>
