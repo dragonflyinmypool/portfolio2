@@ -1,15 +1,54 @@
-<script context="module">
-	export async function load({ fetch, params }) {
-		const id = params.slug;
-		const data = await fetch(`data/${params.slug}.json`).then((r) => r.json());
-		console.log(data);
-		return {
-			props: {
-				data
-			}
-		};
-	}
+<script>
+	export let data;
+
+	import pd from '$lib/data/cardData.json';
+	const projectData = pd.ProductionCards;
+
+	let cardData = projectData.filter((projectData) => projectData.name === data.slug);
+	let cardInfo = cardData[0];
+
+	import StatusBar from '../../../lib/StatusBar.svelte';
+	import LinkBar from '../../../lib/LinkBar.svelte';
 </script>
 
-<script>
-</script>
+<div class="layout">
+	<h1>{cardInfo.name}</h1>
+	<StatusBar statusData={cardInfo.status} />
+	<p>{cardInfo.description}</p>
+	<div class="flex-Text small-text">
+		{#each cardInfo.techologies as tech}
+			<div class="tech">{tech}</div>
+		{/each}
+	</div>
+	<LinkBar data={cardInfo} status="large" />
+</div>
+
+<style>
+	.layout {
+		display: grid;
+		padding-top: 30px;
+		padding-left: 20px;
+		grid-template-rows: 60px 50px 300px 45px 45px;
+		font-size: 0.9rem;
+	}
+	h1 {
+		font-weight: 1000;
+		font-family: myFirstFont;
+	}
+
+	.flex-Text {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 0.8rem;
+		padding-top: 0.5rem;
+	}
+
+	.tech {
+		line-height: 1rem;
+	}
+
+	.small-text {
+		font-size: 0.7rem;
+	}
+</style>

@@ -2,6 +2,7 @@
 	export let data;
 	import GenericCard from './GenericCard.svelte';
 	import StatusBar from './StatusBar.svelte';
+	import LinkBar from './LinkBar.svelte';
 </script>
 
 <GenericCard>
@@ -16,19 +17,14 @@
 				<div class="tech">{tech}</div>
 			{/each}
 		</div>
-		<div class="flex-Text">
-			{#each data.links as link}
-				<a href={link[1]} class="link">{link[0]}</a>
-			{/each}
-			<a href={`/detail/${data.name}`} class="link">+</a>
-		</div>
+		<LinkBar {data} status="small" />
 	</div>
 </GenericCard>
 
 <style>
 	.layout {
 		display: grid;
-		grid-template-rows: 40px 30px 100px 25px 30px;
+		grid-template-rows: 40px 30px 100px 30px 25px;
 		font-size: 0.9rem;
 	}
 	h3 {
@@ -43,16 +39,6 @@
 		justify-content: flex-start;
 		gap: 0.8rem;
 		padding-top: 0.5rem;
-	}
-
-	.link {
-		border-radius: 0.4rem;
-		background-color: var(--button-color);
-		line-height: 22px;
-		height: 22px;
-		padding: 0 0.3rem;
-		font-size: small;
-		vertical-align: middle;
 	}
 
 	.tech {
