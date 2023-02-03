@@ -26,7 +26,7 @@
 		height: 32px;
 	}
 	.link {
-		background-color: rgb(210, 189, 210);
+		background-color: #cb8254;
 		padding: 0.6rem 0.5rem;
 		line-height: 1px;
 	}
