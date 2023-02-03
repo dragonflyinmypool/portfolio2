@@ -19,7 +19,7 @@
 <style>
 	.layout {
 		display: grid;
-		grid-template-rows: 45px 120px 25px 35px;
+		grid-template-rows: 45px 100px 50px 35px;
 		font-size: 0.9rem;
 	}
 </style>

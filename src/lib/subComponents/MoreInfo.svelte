@@ -2,10 +2,20 @@
 	export let data;
 </script>
 
-<div class="flex-Text small-text">
-	{#each data.techologies as tech}
-		<div class="tech">{tech}</div>
-	{/each}
+<div class="small-text">
+	<div class="flex-Text small-text">
+		{#if 'usageStats' in data}
+			<div class="tech">{data.usageStats.stars}</div>
+			<div class="tech">{data.usageStats.reviews}</div>
+		{/if}
+	</div>
+	<div class="flex-Text">
+		{#if 'stack' in data}
+			{#each data.stack as tech}
+				<div class="tech">{tech}</div>
+			{/each}
+		{/if}
+	</div>
 </div>
 
 <style>
