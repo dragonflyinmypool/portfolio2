@@ -1,6 +1,7 @@
 <script>
 	import StatusBar from '../../../lib/subComponents/StatusBar.svelte';
 	import LinkBar from '../../../lib/subComponents/LinkBar.svelte';
+	import MoreInfo from '../../../lib/subComponents/MoreInfo.svelte';
 
 	export let data;
 	import { cards } from '$lib/data/cardData.json';
@@ -12,11 +13,8 @@
 	<h1>{cardInfo.name}</h1>
 	<StatusBar statusData={cardInfo.status} />
 	<p>{cardInfo.description}</p>
-	<div class="flex-Text small-text">
-		{#each cardInfo.techologies as tech}
-			<div class="tech">{tech}</div>
-		{/each}
-	</div>
+	<MoreInfo data={cardInfo} />
+
 	<LinkBar data={cardInfo} status="large" />
 </div>
 
@@ -31,21 +29,5 @@
 	h1 {
 		font-weight: 1000;
 		font-family: myFirstFont;
-	}
-
-	.flex-Text {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		gap: 0.8rem;
-		padding-top: 0.5rem;
-	}
-
-	.tech {
-		line-height: 1rem;
-	}
-
-	.small-text {
-		font-size: 0.7rem;
 	}
 </style>
