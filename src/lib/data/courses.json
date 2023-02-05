@@ -28,17 +28,21 @@
 			"institution": "Udemy",
 			"status": "Not yet started"
 		},
-		{ "title": "Modern React with Redux", "institution": "Udemy", "status": "Completed" },
+		{ "title": "Modern React with Redux", "institution": "Udemy", "status": "Not yet started" },
 		{
 			"title": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
 			"institution": "Udemy",
 			"status": "Taking currently"
 		},
-		{ "title": "API and Web Service Introduction", "institution": "Udemy", "status": "Completed" },
+		{
+			"title": "API and Web Service Introduction",
+			"institution": "Udemy",
+			"status": "Taking currently"
+		},
 		{
 			"title": "The Complete Google Sheets Course: Beginner to Advanced!",
 			"institution": "Udemy",
-			"status": "Taking currently"
+			"status": "Completed"
 		},
 		{
 			"title": "Completed math, physics, and structures courses",

@@ -1,28 +1,42 @@
 <script>
 	// import genericCard.svelte
 	import GenericCard from '../GenericCard.svelte';
+	import { courses } from '$lib/data/courses.json';
+	console.log(courses);
+	// filter only courses that course.status is 'Completed'
+	const completedCourses = courses.filter((course) => course.status === 'Completed');
+	console.log(completedCourses);
 </script>
 
 <GenericCard>
-	<h2>Courses</h2>
-	<ul style="list-style:disc">
-		<li>Intermediate JavaScript</li>
-		<li>Understanding the Weird Parts</li>
-		<li>JavaScript Algorithms and Data Structures</li>
-		<li>Svelte.js, The Complete Guide by Max Schwarzmüller, Udemy</li>
-		<li>
-			NodeJS, The Complete Guide (MVC, REST APIs, GraphQL, Denode) by Max Schwarzmüller, Udemy
-		</li>
-		<li>The Complete Google Sheets Course: Beginner to Advanced!</li>
-	</ul>
-	<div class="flex-Text">
-		<a href={`./courses`} class="link">+</a>
+	<div class="layout">
+		<h3>Courses</h3>
+		<ul>
+			{#each completedCourses as course}
+				<li>
+					{course.title}
+					({course.institution})
+				</li>
+			{/each}
+			<div />
+		</ul>
+		<div class="flex-Text">
+			<a href={`./courses`} class="link">+</a>
+		</div>
 	</div>
 </GenericCard>
 
 <style>
+	.layout {
+		display: grid;
+		grid-template-rows: 45px 150px 35px;
+	}
 	ul {
-		padding: 15px;
+		list-style: none;
+		font-size: 10px;
+	}
+	li {
+		padding: 0.05rem 0;
 	}
 	.flex-Text {
 		display: flex;
@@ -30,7 +44,7 @@
 		justify-content: flex-start;
 		gap: 0.8rem;
 		padding-top: 0.5rem;
-		font-size: small;
+		font-size: 20px;
 		height: 32px;
 	}
 	.link {
