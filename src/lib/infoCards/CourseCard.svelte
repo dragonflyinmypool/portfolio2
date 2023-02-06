@@ -2,10 +2,8 @@
 	// import genericCard.svelte
 	import GenericCard from '../GenericCard.svelte';
 	import { courses } from '$lib/data/courses.json';
-	console.log(courses);
 	// filter only courses that course.status is 'Completed'
 	const completedCourses = courses.filter((course) => course.status === 'Completed');
-	console.log(completedCourses);
 </script>
 
 <GenericCard>
