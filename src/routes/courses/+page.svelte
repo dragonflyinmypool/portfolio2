@@ -1,51 +1,50 @@
 <script>
 	import { courses } from '$lib/data/courses.json';
-	const sortedCourses = courses.sort((a, b) => {
-		if (a.status === 'Not yet started' && b.status !== 'Not yet started') {
-			return -1;
-		} else if (a.status !== 'Not yet started' && b.status === 'Not yet started') {
-			return 1;
-		} else if (a.status === 'Taking currently' && b.status !== 'Taking currently') {
-			return -1;
-		} else if (a.status !== 'Taking currently' && b.status === 'Taking currently') {
-			return 1;
-		} else if (a.status === 'Completed' && b.status !== 'Completed') {
-			return -1;
-		} else if (a.status !== 'Completed' && b.status === 'Completed') {
-			return 1;
-		} else {
-			return 0;
-		}
-	});
 </script>
 
 <div class="page">
-	<h2>Courses</h2>
-	<div class="key">
-		<div class="completed">Completed</div>
-		<div class="taking">Taking currently</div>
-		<div class="notStarted">Not yet started</div>
-	</div>
-	<div class="grid">
-		{#each courses as course}
-			{#if course.status === 'Completed'}
-				<div class="completed row">
-					<p>{course.title}</p>
-					<span>{course.institution}</span>
-				</div>
-			{:else if course.status === 'Taking currently'}
-				<div class="taking row">
-					<p>{course.title}</p>
-					<span>{course.institution}</span>
-				</div>
-			{:else if course.status === 'Not yet started'}
-				<div class="notStarted row">
-					<p>{course.title}</p>
-					<span>{course.institution}</span>
-				</div>
-			{/if}
-		{/each}
-	</div>
+	<h1>Courses</h1>
+	<main class="grid">
+		<div class="notStarted column">
+			<h2>Future Courses</h2>
+			<div class="grid2">
+				{#each courses as course}
+					{#if course.status.toLowerCase() === 'Not Yet Started'.toLocaleLowerCase()}
+						<div>
+							{course.title}
+							<div class="institution">{course.institution}</div>
+						</div>
+					{/if}
+				{/each}
+			</div>
+		</div>
+		<div class="taking column">
+			<h2>Taking</h2>
+			<div class="grid2">
+				{#each courses as course}
+					{#if course.status.toLowerCase() === 'Taking currently'.toLocaleLowerCase()}
+						<div>
+							{course.title}
+							<div class="institution">{course.institution}</div>
+						</div>
+					{/if}
+				{/each}
+			</div>
+		</div>
+		<div class="completed column">
+			<h2>Completed</h2>
+			<div class="grid2">
+				{#each courses as course}
+					{#if course.status.toLowerCase() === 'Completed'.toLocaleLowerCase()}
+						<div>
+							{course.title}
+							<div class="institution">{course.institution}</div>
+						</div>
+					{/if}
+				{/each}
+			</div>
+		</div>
+	</main>
 
 	<div class="flex-Text">
 		<a href={`../`} class="link">-</a>
@@ -53,63 +52,53 @@
 </div>
 
 <style>
-	.page {
-		background-color: #dadedb;
-		padding: 20px;
-		border-radius: 15px;
-	}
-	h2 {
+	h1 {
 		margin-bottom: 20px;
-	}
-	.key {
-		display: flex;
-		justify-content: flex-start;
-		gap: 0.3rem;
-		color: #dadedb;
-		margin-bottom: 20px;
-	}
-	.key > * {
-		padding: 0.1rem 0.5rem;
-		border-radius: 5px;
 	}
 	.grid {
 		display: grid;
-		grid-gap: 0.1rem;
-		background-color: #dadedb;
-		grid-template-columns: minmax(80px, 650px);
-		max-width: 900px;
-		border-radius: 15px;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 1rem;
+		max-width: 1000px;
+	}
+
+	.column {
+		padding: 0.5rem;
+		border-radius: 10px;
+	}
+
+	.grid2 {
+		display: grid;
+		grid-template-columns: minmax(200px, 300px);
+		grid-gap: 0.4rem;
 		color: white;
+		font-size: 1.2rem;
 	}
-	.grid > * {
-		background-color: var(--card-background);
-		padding: 0.6rem 0.5rem;
-		border-radius: 5px;
+
+	.grid2 > div {
+		padding: 0.3rem 0.5rem;
+		border-radius: 10px;
 	}
-	/* green border */
-	.completed {
+
+	.completed div div {
 		background-color: #358238;
 	}
 
 	/* grey border */
-	.taking {
+	.taking div div {
 		background-color: rgb(133, 174, 117);
 	}
-	.notStarted {
-		background-color: #a9a9a9;
-	}
-	span {
-		font-size: 0.6rem;
+	.notStarted div div {
+		background-color: #888888;
 	}
 
+	.institution {
+		font-size: 0.7rem;
+	}
+	/* Back button */
 	.flex-Text {
 		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		gap: 0.8rem;
 		padding-top: 0.5rem;
-		font-size: 20px;
-		height: 32px;
 	}
 	.link {
 		background-color: #e6efea;
@@ -123,6 +112,5 @@
 		text-decoration: none;
 		font-weight: bold;
 		border-radius: 10px;
-		line-height: 12px;
 	}
 </style>
