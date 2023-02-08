@@ -19,6 +19,9 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 25px;
+}
 
 /* Main grid layout */
 .grid {
@@ -36,9 +39,13 @@ body {
 }
 
 
+
 /* Title styles */
-h1 {
-    font-size: 25px;
+
+h2 {
+    text-align: center;
+    border-radius: 5px;
+
 }
 
 .todoTitle {
@@ -53,11 +60,6 @@ h1 {
     background-color: rgb(33, 106, 14);
 }
 
-h2 {
-    text-align: center;
-    border-radius: px;
-    ;
-}
 
 /* card columns */
 .cardColumn {
