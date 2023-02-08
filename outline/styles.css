@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* General page layout */
+body {
+    background-color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #dedede;
+    padding: 10px;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Main grid layout */
+.grid {
+    max-width: 1200px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(275px, 500px));
+    grid-gap: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Title styles */
+h1 {
+    font-size: 25px;
+}
+
+.todoTitle {
+    background-color: rgb(81, 73, 111);
+}
+
+.workingOnTitle {
+    background-color: rgb(62, 110, 110);
+}
+
+.doneTitle {
+    background-color: rgb(33, 106, 14);
+}
+
+h2 {
+    text-align: center;
+    border-radius: px;
+    ;
+}
+
+/* card columns */
+.cardColumn {
+    background-color: #212121;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.card {
+    height: 200px;
+    display: grid;
+    grid-template-rows: 30px 120px 30px;
+    border: 1px solid #dedede;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+
+button {
+    background-color: #212121;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    color: #dedede;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
