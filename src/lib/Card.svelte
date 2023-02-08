@@ -19,7 +19,6 @@
 		height: 90px;
 		display: grid;
 		grid-template-rows: 40px 30px;
-		border: 1px solid #dedede;
 		padding: 10px;
 		border-radius: 5px;
 	}
