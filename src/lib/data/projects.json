@@ -16,7 +16,7 @@
 			"name": "ChitChat",
 			"status": "done",
 			"version": "1",
-			"description": "Genereate a conversation starter with this app, based on location, tone, age and other attributes.",
+			"description": "Genereate a conversation starter with this app, based on location, tone, age and other attributes. This app can help you stike a converstation with a stranger or a friend.",
 			"stack": ["Node.js", "GPT-3", "Railway.app", "Netlify"],
 			"links": {
 				"App": "https://chit-chat-convo.netlify.app/",
@@ -40,7 +40,7 @@
 			"name": "SimpleBingoCaller",
 			"status": "done",
 			"version": "2",
-			"description": "This app helps elderly play bingo in care facilities. It displays the ball in large and calls the number in multiple languages",
+			"description": "This app helps elderly play bingo in care facilities. It displays the ball in large and calls the number in multiple languages. Made for Amazon Firestick.",
 			"stack": ["Svelte"],
 			"usageStats": {
 				"stars": "3.4★",
@@ -72,7 +72,7 @@
 			"name": "LoanTrackingSystem",
 			"status": "done",
 			"version": "4",
-			"description": "This system helped the lender track loans, syndicator investments, sales commission and many other loan variables. Particular attention was payed to ease of use, compatibilty with accounting software & security.",
+			"description": "This system helped the lender track loans, syndicator investments, sales commission and many other loan variables. Particular attention was payed to ease of use and compatibilty with accounting softwar.",
 			"stack": ["Google sheets", "Google App Scripts"],
 			"links": {}
 		},
@@ -81,7 +81,7 @@
 			"name": "Games4Life",
 			"status": "done",
 			"version": "2",
-			"description": "Games for elders that are designed so that they can understand and participate.Reached 100s of seniors with over 30 nursing home customers.",
+			"description": "Games for elders that are designed so that they can understand and participate. Reached 100s of seniors with over 30 nursing home customers.",
 			"techologies": [],
 			"links": {}
 		}
