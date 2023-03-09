@@ -31,7 +31,7 @@
 			"description": "A bot that posts interesting history facts and images each day.",
 			"stack": ["Node.js", "Twitter API", "GPT-3", "Bing API", "Railway.app"],
 			"links": {
-				"App": "https://twitter.com/imnotfromhere99",
+				"App": "https://twitter.com/tweet2poem",
 				"Code": "https://github.com/dragonflyinmypool/TwitterHistoryBot-GPT"
 			}
 		},
